@@ -10,8 +10,9 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Title</th>
-                        <th scope="col">Cooking Time</th>
-                        <th scope="col">Type</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Series</th>
+                        <th scope="col">Sale date</th>
                         <th scope="col">Actions</th>
                     </tr>
                     </thead>
@@ -23,7 +24,12 @@
                                 <td>{{ $comic['price'] }}</td>
                                 <td>{{ $comic['series'] }}</td>
                                 <td>{{ $comic['sale_date'] }}</td>
-                                
+                                <td>
+                                    <a href="{{ route('comics.show', $comic['id']) }}"
+                                        class="btn btn-info">
+                                        Details
+                                    </a>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
