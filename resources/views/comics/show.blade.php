@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        <p>{{ $details['description'] }}</p>
+        <p>{{ $comic['description'] }}</p>
     </div>
 @endsection
