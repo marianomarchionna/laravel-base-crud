@@ -29,6 +29,10 @@
                                         class="btn btn-info">
                                         Details
                                     </a>
+                                    <a href="{{ route('comics.edit', $comic['id']) }}"
+                                        class="btn btn-warning">
+                                        Modify
+                                    </a>
                                 </td>
                             </tr>
                         @endforeach
